@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="@string/home"
+            android:checked="true"
+            android:checkable="true"/>
+
+        <item
+            android:id="@+id/actionMovie"
+            android:title="@string/action"
+            android:checked="false" />
+
+        <item
+            android:id="@+id/adventureMovie"
+            android:checked="false"
+            android:title="@string/adventure" />
+
+        <item
+            android:id="@+id/animationMovie"
+            android:checked="false"
+            android:title="@string/animation" />
+
+        <item
+            android:id="@+id/comedyMovie"
+            android:checked="false"
+            android:title="@string/comedy" />
+
+        <item
+            android:id="@+id/crimeMovie"
+            android:checked="false"
+            android:title="@string/crime" />
+
+        <item
+            android:id="@+id/dramaMovie"
+            android:checked="false"
+            android:title="@string/drama" />
+
+        <item
+            android:id="@+id/horrorMovie"
+            android:checked="false"
+            android:title="@string/horror" />
+
+        <item
+            android:id="@+id/scifiMovie"
+            android:checked="false"
+            android:title="@string/scifi" />
+
+    </group>
+
+</menu>

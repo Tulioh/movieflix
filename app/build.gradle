@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.tuliohdev.movieflix"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+
+    // Butterknife
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    // Picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    // Gson
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.1'
+
+    // Retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+
+    //RxJava
+    compile 'io.reactivex:rxjava:1.1.9'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+
+    // Event Bus Otto
+    compile 'com.squareup:otto:1.3.8'
+
+    // Material Menu
+    compile 'com.balysv.materialmenu:material-menu-toolbar:1.5.4'
+}
